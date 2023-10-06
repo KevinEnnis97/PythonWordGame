@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<p>You were placed in position {{ place }} out of {{ total }} players.</p>
+<p>Here's the top ten scores:</p>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Position</th>
+      <th>Time</th>
+      <th>Who</th>
+      <th>Sourceword</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for score in scores %}
+    <tr>
+      <td> {{ loop.index }} </td>
+      {% for col in score %}
+      <td> {{ col }} </td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<p><a href="/startgame"><button>Play again?</button></a></p>
+<p><a href="/rules"><button>Review the rules</button></a></p>
+{% endblock %}

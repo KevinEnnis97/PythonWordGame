@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<ul>
+  {% for error in errors %}
+  <li>{{ error }}</li>
+  {% endfor %}
+</ul>
+<h2>Better luck next time.</h2>
+<p>For now, you're a loser...</p>
+<p><a href="/startgame"><button>Play again?</button></a></p>
+<p><a href="/rules"><button>Review the rules</button></a></p>
+{% endblock %}

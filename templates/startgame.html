@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Let's get busy!</h2>
+<p>The clock is ticking...</p>
+<p>You word is: <strong>{{ session['source_word'] }}</strong></p>
+<p>Enter your seven words in this box, separating each word by a space:</p><p></p>
+<form action="/processwords" method="post">
+  <input type="text" required="" autofocus="" size="100" name="seven_words">
+  <p><input type="submit" value="Done!"></p>
+</form>
+{% endblock %}

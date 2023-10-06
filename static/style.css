@@ -1,0 +1,68 @@
+body {
+  font-size: 10px;
+  background-image: url("https://i.imgur.com/4sygm7H.png");
+  background-size: 32em;
+  background-color: #1c2022;
+}
+
+#content {
+  font-size: 2em;
+  margin: auto;
+  margin-top: 15%;
+  padding: 1em;
+  background-color: #24282aee;
+  border: solid 2px;
+  color: #e1eaef;
+  width: 60%;
+  border-radius: 0.5em;
+}
+
+table {
+  table-layout: fixed;
+  font-size: 1.2em;
+  border-collapse: collapse;
+  margin: auto;
+  padding: 1em;
+  color: #e1eaef;
+  width: 90%;
+  border-radius: 0.5em;
+}
+tbody tr:nth-child(odd) {
+  background-color: #2f343688;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #1a1e2088;
+}
+
+thead {
+  background-color: #12151688;
+}
+
+a {
+  display: inline-block;
+  width: 15%;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+button {
+  background-color: #286482;
+  border: black solid 1px;
+  color: #e1eaef;
+  border-radius: 0.5em;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: #286482;
+  border: black solid 1px;
+  color: #e1eaef;
+  border-radius: 0.5em;
+  width: 15%;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+input[type="text"] {
+  margin-left: 20%;
+}

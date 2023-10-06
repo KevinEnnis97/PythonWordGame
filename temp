@@ -1,0 +1,33 @@
+errors required:
+            <li>You have an incorrect number of words: 4, not 7.</li>
+            <li>You have duplicates in your list: asd asd asd asd asd asd asd asd asd asd asd asd asd asdasd</li>
+            <li>You used these invalid letters: w p 2 z 3 1 r</li>
+            <li>You misspelt these words: 231 wrwrwrwr</li>
+            <li>These words are too small: a</li>
+            <li>You cannot use the source word: tubercular</li>
+            <li>Skullduggery is afoot. There's no way you were that quick!</li>
+
+in pbarry, different behaviour with browser forward and back
+  "done" session var
+  - v2. kinda have this done but pressing browser froward button warns about "confirm form resubmission"...
+      -or if going back from score page...not good :/
+  - even on winner screen, clicking on record score again doesnt bring you back to the score page if you already saw it
+  - form submissions everywhere... (something to do with methods and request.method¿)
+
+
+which errors are more important? (if you have all 8, which show up. currently for me i will show all, pb does it different))
+  -word count + invalid letters + misspelt words
+
+can you use the same letter multiple times?
+  - no it is invalid leteter
+
+using database, should do it like this: # http://flask.pocoo.org/docs/1.0/patterns/sqlite3/
+  - you just use json/pickle?...(dont worry about multiple users)
+
+improvment ideas:
+  new error if not using alphabet characters
+  replace manual counter with collections counter
+  refresh on winner changes time (same as pb)
+
+with json sometimes the scores gets cleared??
+
